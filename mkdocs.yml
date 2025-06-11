@@ -1,0 +1,49 @@
+site_name: Sean Dockray
+docs_dir: !ENV [DOCS_DIR, '/Users/sdoc0001/Documents/notes/website'] # ABSOLUTE path when it's not in the repo
+site_url: !ENV [SITE_URL, 'https://somethingilearned.today']
+
+exclude_docs: |
+  .DS_Store
+  README.md
+  LICENSE
+  .gitignore
+  .git
+  .github
+  .vscode
+  templates
+  OLD
+
+# pip install mkdocs-literate-nav
+# pip install mkdocs-material
+# pip install mkdocs-obsidian-bridge
+plugins:
+  - tags:
+      tags_file: tags.md
+  - obsidian-bridge
+  - literate-nav: # https://oprypin.github.io/mkdocs-literate-nav/index.html
+      nav_file: NAVIGATION.md
+
+markdown_extensions:
+  - sane_lists
+  - pymdownx.blocks.caption
+
+theme:
+  name: material
+  custom_dir: overrides
+  # You can start customizing features, palette, font here for the brutalist look
+  # For example, to get a very basic look to start:
+  features:
+    - navigation.top # Good for brutalist, less cluttered
+    - navigation.indexes
+  palette:
+    scheme: default
+    primary: white # or a light grey
+    accent: black
+  font:
+    text: Lato # Open Sans #Karla # Or a more brutalist-friendly monospace/sans-serif
+    code: Roboto Mono
+  logo: assets/images/logo.png # Optional
+  favicon: assets/images/logo.ico # Optional
+
+extra_css:
+  - assets/stylesheets/extra.css

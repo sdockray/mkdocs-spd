@@ -1,0 +1,40 @@
+@font-face {
+    font-family: 'IBM Plex Serif';
+    font-style: normal;
+    font-weight: 400;
+    src: url('https://fonts.googleapis.com/css2?family=Crimson+Text&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Libre+Baskerville:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap') format('woff2');
+  }
+
+:root  > * {
+    --md-typeset-a-color: #00F;
+    --md-typeset-a-hover-color: #00D;
+}
+
+.md-header__title {
+    font-size: 0.8rem;
+}
+
+header.md-header.md-header--shadow {
+    border-bottom : dashed 1px #666;
+    box-shadow: none;
+    transition: none;
+}
+
+.md-typeset h1, .md-typeset h2, .md-typeset h3 {
+    font-weight: 700;
+    font-size: .8rem;
+    color: #000;
+}
+
+.md-typeset h2:before {
+    content: "## ";
+}
+
+.md-typeset h3:before {
+    content: "### ";
+}
+
+.md-typeset figcaption {
+    text-align: left;
+    max-width: 100%;
+}
