@@ -26,6 +26,8 @@ plugins:
 markdown_extensions:
   - sane_lists
   - pymdownx.blocks.caption
+  - toc:
+      title: Contents
 
 theme:
   name: material
@@ -35,12 +37,13 @@ theme:
   features:
     - navigation.top # Good for brutalist, less cluttered
     - navigation.indexes
+    - navigation.sections
   palette:
     scheme: default
     primary: white # or a light grey
     accent: black
   font:
-    text: Lato # Open Sans #Karla # Or a more brutalist-friendly monospace/sans-serif
+    text: Georgia # Alegreya #Lato # Open Sans #Karla # Or a more brutalist-friendly monospace/sans-serif
     code: Roboto Mono
   logo: assets/images/logo.png # Optional
   favicon: assets/images/logo.ico # Optional

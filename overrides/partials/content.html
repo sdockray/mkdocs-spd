@@ -1,0 +1,37 @@
+{#-
+    Original template here:
+    https://github.com/squidfunk/mkdocs-material/blob/master/material/templates/partials/content.html
+-#}
+{#-
+    SD: Remove tags from the top of the page
+{% include "partials/tags.html" %}
+-#}
+{% include "partials/actions.html" %}
+{% if "\x3ch1" not in page.content %}
+  <h1>{{ page.title | d(config.site_name, true)}}</h1>
+{% endif %}
+
+{#-
+    SD: I have customized the template to show custom meta properties 
+-#}
+{% if page.meta %}
+<table class="properties">
+{% if page.meta.display_date %}<tr><td>Date:</td><td>{{ page.meta.display_date }}</td></tr>{% endif %}
+{% if page.meta.format %}<tr><td>Format:</td><td>{{ page.meta.format }}</td></tr>{% endif %}
+{% if page.meta.credit %}<tr><td>Credit:</td><td>{{ page.meta.credit }}</td></tr>{% endif %}
+{% if tags %}
+<tr><td>Index:</td><td class="tags">
+{% for tag in tags %}
+{% if tag.url %}<a href="{{ tag.url | url }}">{{- tag.name -}}</a>{% else %}<span>{{- tag.name -}}</span>{% endif %}
+{% endfor %}
+</td></tr>
+{% endif %}
+</table>
+
+
+{% endif %}
+
+{{ page.content }}
+{% include "partials/source-file.html" %}
+{% include "partials/feedback.html" %}
+{% include "partials/comments.html" %}
