@@ -26,6 +26,7 @@ plugins:
 markdown_extensions:
   - sane_lists
   - pymdownx.blocks.caption
+  - admonition
   - toc:
       title: Contents
 

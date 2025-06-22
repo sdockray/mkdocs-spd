@@ -52,6 +52,13 @@ header.md-header.md-header--shadow {
     font-size: 0.7rem;;
 }
 
+[dir=ltr] .md-typeset blockquote {
+    padding-left: 1.2rem;
+    padding-right: 0.6rem;
+    border-left-width: 1px;
+    color: #030300;
+}
+
 ul.md-nav__list {
     font-family: 'Space Grotesk', sans-serif;
 }
