@@ -59,6 +59,11 @@ header.md-header.md-header--shadow {
     color: #030300;
 }
 
+.md-nav--primary .md-nav__title[for=__drawer] {
+    font-family: 'Space Grotesk', sans-serif;
+    visibility: hidden;
+}
+
 ul.md-nav__list {
     font-family: 'Space Grotesk', sans-serif;
 }
