@@ -45,7 +45,7 @@ theme:
     primary: white # or a light grey
     accent: black
   font:
-    text: Georgia # Alegreya #Lato # Open Sans #Karla # Or a more brutalist-friendly monospace/sans-serif
+    text: Arimo # Georgia # Alegreya #Lato # Open Sans #Karla # Or a more brutalist-friendly monospace/sans-serif
     code: Roboto Mono
   logo: assets/images/logo.png # Optional
   favicon: assets/images/logo.ico # Optional

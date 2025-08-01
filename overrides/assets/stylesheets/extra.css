@@ -28,7 +28,7 @@ header.md-header.md-header--shadow {
 }
 
 .md-typeset {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .md-typeset h1, .md-typeset h2, .md-typeset h3 {
@@ -56,6 +56,7 @@ header.md-header.md-header--shadow {
     padding-left: 1.2rem;
     padding-right: 0.6rem;
     border-left-width: 1px;
+    line-height: 120%;
     color: #030300;
 }
 
@@ -68,10 +69,21 @@ ul.md-nav__list {
     font-family: 'Space Grotesk', sans-serif;
 }
 
+
+.md-nav--primary ul.md-nav__list {
+    font-size: 0.85em;
+}
+
+.md-nav--primary ul.md-nav__list a.md-nav__link--active span {
+    color: #000;
+    text-decoration: wavy underline;
+}
+
 .md-nav--primary > ul.md-nav__list > li:last-child {
     border-top: 1px solid #ccc;
     margin-right: 50%;
 }
+
 
 .md-nav--primary > ul.md-nav__list > li {
     width: 90%;
